@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eniac petz</title>
+</head>
+<body>
+
+    <h2>Listagem de usuários</h2>
+
+    <a href="#url-cadastrar-user"><button>Cadastrar novo usuário</button></a>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Quantidade de Animais</th>
+                <th>Telefone</th>
+                <th>Informações Gerais</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.nome }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.quant_animais }}</td>
+                    <td>{{ user.telefone }}</td>
+                    <td>{{ user.info_geral }}</td>
+                    <td>[<a href="#url-editar-user">Editar</a>]</td>
+                    <td>[<a href="#url-excluir-user">Excluir</a>]</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+<html>

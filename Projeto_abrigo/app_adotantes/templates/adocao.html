@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eniac petz</title>
+</head>
+<body>
+    <h2>Listagem de adoções</h2>
+
+    <a href="#url-cadastrar-adocao"><button>Cadastrar nova adoção</button></a>
+    
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Data</th>
+                <th>Animal_id</th>
+                <th>voluntario</th>
+                <th>Status</th>
+                <th>Adotante_id</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for adocao in adocoes %}
+                <tr>
+                    <td>{{ adocao.id }}</td>
+                    <td>{{ adocao.data }}</td>
+                    <td>{{ adocao.animal_id }} - {{ adocao.animal.nome }}</td>
+                    <td>{{ adocao.voluntario_id }} {{ adocao.voluntario.nome }}</td>
+                    <td>{{ adocao.status }}</td>
+                    <td>{{ adocao.adotante_id }} - {{ adocao.adotante.nome }}</td>
+                    <td>[<a href="#url-editar-adocao">Editar</a>]</td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

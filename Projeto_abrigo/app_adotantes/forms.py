@@ -5,3 +5,8 @@ class UserForm (forms.ModelForm):
     class Meta:
          model = Form_User
          fields = ["nome", "email", "telefone", "quant_animais", "info_geral"]
+
+class AdocaoForm (forms.ModelForm):
+     class Meta:
+          model = Adocao
+          fields = ["animal", "voluntario", "status", "adotante"]
