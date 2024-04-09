@@ -20,7 +20,7 @@ from app_adotantes.views import adotantes
 from django.conf import settings
 from django.conf.urls.static import static
 from app_paginas_gerais.views import inicial, sobre
-from app_animais.views import animais
+from app_animais.views import animal_list, animal_detail
 from app_voluntarios.views import voluntarios
 
 urlpatterns = [
@@ -28,7 +28,8 @@ urlpatterns = [
     path('adotantes/', adotantes),
     path('', inicial, name='inicial'),
     path('sobre/', sobre, name='sobre'),
-    path('animais/', animais, name='animais'  ),
+    path('animais/', animal_list, name='animais'  ),
+    path('animais/<int:pk>/', animal_detail, name='animal_detail'),
     path('voluntarios/', voluntarios, name='voluntarios' )
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )+ [
     # Definindo o caminho para servir arquivos estáticos durante o desenvolvimento
