@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Detalhes do Animal</h1>
+    <h2>{{ animal.nome }}</h2>
+    <p>Idade: {{ animal.idade }}</p>
+    <p>Chip: {{ animal.chip }}</p>
+    <p>Sobre: {{ animal.info_animais }}</p>
+    <img src="{{ animal.image.url }}" alt="{{ animal.nome }} Image">
+    <p>Raça: {{ animal.raca }}</p>
+    <p>Espécie: {{ animal.especie }}</p>
+    <p>Porte: {{ animal.porte }}</p>
+    <p>Sexo: {{ animal.sexo }}</p>
+    <p>Disponível: {{ animal.disponivel }}</p>
+
+{% endblock %}
