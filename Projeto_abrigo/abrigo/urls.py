@@ -31,4 +31,7 @@ urlpatterns = [
     path('animais/', animal_list, name='animais'  ),
     path('animais/<int:pk>/', animal_detail, name='animal_detail'),
     path('voluntarios/', voluntarios, name='voluntarios' )
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )+ [
+    # Definindo o caminho para servir arquivos estáticos durante o desenvolvimento
+    # Isso serve arquivos estáticos em STATIC_URL (ex: '/static/') para STATIC_ROOT (ex: 'static/')
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
