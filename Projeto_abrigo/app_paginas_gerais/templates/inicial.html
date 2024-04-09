@@ -1,9 +1,14 @@
 {% extends 'base.html'%}
+{% load static %}
 
-{% block content %}
+
+    {% block content %}
+   <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+   
     <h1>Página inicial</h1>
     
     <div>
+    <img src="{% static '/imagens/logo.png' %}"/>
     <h2>Nosso trabalho</h2> 
     <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. 
     Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
@@ -15,13 +20,29 @@
     Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
     </div>
 
-    <h2>Passo a passo da adoção</h2>
+    <div>
+        40  Milhões de animais abandonados no Brasil segundo a OMS
+        55%  Desses animais são cães segundo a Cobasi cuida.
+        45% Desses animais são gatos segundo a Cobasi cuida.
+    </div>
 
+    <div>
+    <h2>Passo a passo da adoção</h2>
+    Pesquise na nossa aba de adoção e escolha entre os animais disponiveis 
+    Preencha o formulario de adoção e aguarde o contato de um de nossos voluntários
+    Adoção aprovada! Combine com o voluntário o dia de retirads!
+    </div>
+
+    <div>
     <h2>Animais disponiveis para adoção</h2>
     <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
-        Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
-     
+    Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
+    </div>
+
+    <div>
     <h2>Vamos juntos nessa Jornada!</h2>
     <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
      Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
+    </div>
+
 {% endblock %}
