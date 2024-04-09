@@ -13,10 +13,16 @@
                 <p>Chip: {{ animal.chip }}</p>
                 <p>Sobre: {{ animal.info_animais }}</p>
                 <!-- Adicione mais campos conforme necessário -->
-                <img src="{{ animal.image.url }}" alt="{{ animal.nome }} Image">
+                <img src="{{ animal.imagem.url }}" alt="{{ animal.nome }} Image">
                 <p>Raça: {{ animal.raca }}</p>
                 <p>Especie: {{ animal.especie }}</p>
                 <p>Porte: {{ animal.porte }}</p>
                 <p>Sexo: {{ animal.sexo }}</p>
                 <p>
+            </li>
+
+            <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p>   
+        {% endfor %}
+    </ul> 
+
 {% endblock %}
