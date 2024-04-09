@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Voluntario,PedidoInscricao
+from .models import Voluntario
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 from django import forms
 
@@ -13,9 +13,8 @@ class ContactForm(forms.ModelForm):
 
 @admin.register(Voluntario)
 class AdocaoAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'telefone')
+    list_display = ('nome', 'telefone', 'status')
+    search_fields = ('nome', 'telefone')
+    list_filter = ('status','ativo')
     form = ContactForm
-
-@admin.register(PedidoInscricao)
-class PedidoAdmin(admin.ModelAdmin):
-    search_fields = ['status']
+    
