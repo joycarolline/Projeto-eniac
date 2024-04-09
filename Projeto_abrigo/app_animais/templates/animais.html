@@ -1,6 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Página animais</h1>
+    <h1>Página Animais</h1>
     <!-- Conteúdo específico da página animais -->
+
+    <h1>Lista de Animais</h1>
+    <ul>
+        {% for animal in animais %}
+            <li>
+                <h2>{{ animal.nome }}</h2>
+                <p>Idade: {{ animal.idade }}</p>
+                <p>Chip: {{ animal.chip }}</p>
+                <p>Sobre: {{ animal.info_animais }}</p>
+                <!-- Adicione mais campos conforme necessário -->
+                <img src="{{ animal.image.url }}" alt="{{ animal.nome }} Image">
+                <p>Raça: {{ animal.raca }}</p>
+                <p>Especie: {{ animal.especie }}</p>
+                <p>Porte: {{ animal.porte }}</p>
+                <p>Sexo: {{ animal.sexo }}</p>
+                <p>
 {% endblock %}
