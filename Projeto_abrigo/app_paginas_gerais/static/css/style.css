@@ -116,13 +116,11 @@ body{
 .texto-sobre5{
     display: block;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .img-redimensionada2{
     width: 300px;
     height: auto; /* Mantém a proporção da imagem */
-    border: 1px solid black;
 }
 
 .text5{
@@ -167,4 +165,21 @@ body{
     justify-content: center;
     background-color: white;
     color: rgba(155, 171, 216, 1);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carrosel{
+    display: flex; /* Exibe os elementos como um flex container */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    border: 1px solid black;
+    padding: 20px;
+    margin: 30px;
+    height: 70px;
+    
+}
+
+.espaçamento{
+ margin-top: 50px;
 }

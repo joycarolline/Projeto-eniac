@@ -2,34 +2,21 @@
 {% load static %}
 
 {% block content %}
-    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
 
-    <!-- Conteúdo específico da página animais -->
-      <header class="header" >
-        <img src="{% static '/img/Component 7.png' %} "class="img-header" alt="imagem header"/>
-        <h1>header</h1>
-      </header>
-
-    <h1>Animais disponiveis para adoção</h1>
-    <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. Pellentesque leo eros, auctor eget </a>
+<header class="header" >
+    
+  </header>
+  
+  </h1>Disponiveis para adoção</h1>
+   <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. Pellentesque leo eros, auctor eget </a>
     <ul>
         {% for animal in animais %}
             <li>
                 <h2>{{ animal.nome }}</h2>
-                <p>Idade: {{ animal.idade }}</p>
-                <p>Chip: {{ animal.chip }}</p>
-                <p>Sobre: {{ animal.info_animais }}</p>
-                <!-- Adicione mais campos conforme necessário -->
-                <img src="{{ animal.imagem.url }}" alt="{{ animal.nome }} Image">
-                <p>Raça: {{ animal.raca }}</p>
-                <p>Especie: {{ animal.especie }}</p>
-                <p>Porte: {{ animal.porte }}</p>
-                <p>Sexo: {{ animal.sexo }}</p>
-                <p>
+                <!-- Outras informações do animal podem ser exibidas aqui -->
+                <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p> 
             </li>
-
-            <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p>   
         {% endfor %}
-    </ul> 
-
-{% endblock %}
+    </ul>
+    {% endblock %}
