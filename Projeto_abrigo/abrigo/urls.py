@@ -25,7 +25,6 @@ from app_voluntarios.views import voluntarios
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('adotantes/', adotantes),
     path('', inicial, name='inicial'),
     path('sobre/', sobre, name='sobre'),
     path('animais/', animal_list, name='animais'  ),

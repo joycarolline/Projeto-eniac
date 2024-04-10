@@ -4,44 +4,84 @@
 
     {% block content %}
    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
-   
-    <h1>Página inicial</h1>
+
+    <h1 class="centralizar">Um jeito fácil de fazer um novo amigo!</h1>
     
-    <div>
-    <img src="{% static '/imagens/logo.png' %}"/>
+    <div class = "conteiner-inicio">
+    <div class="conteiner-sobre">
+
+    <div class="img-logo2">
+    <img src="{% static '/img/logo.png' %}" class="img-redimensionada" alt="Logo"/>
+    </div>
+
+    <div class="texto-sobre">
     <h2>Nosso trabalho</h2> 
     <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. 
+    Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.
+    Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. 
     Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
     </div>
+    </div>
+    </div>
+     
+    <div class="conteiner-inicio">
+    <div class="conteiner-sobre2">
 
-    <div>
+    <div class="texto-sobre2">
     <h2>Adotar salva vidas!</h2>
     <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. 
+    Pellentesque leo eros, auctor eget mollis ac, fringilla 
+    id justo.Lorem ipsum dolor sit amet</a>
+    </div>
+
+    <div class="img-logo3">
+    <img src="{% static '/img/img1.png' %}" class="img-cachorro" alt="cachorro"/>
+    </div>
+
+    </div>
+    </div>
+     
+    <div class="conteiner-inicio">
+    <div class="dados-inicial">
+       <div> 40 <br/>  Milhões de animais abandonados no Brasil segundo a OMS.</div>
+       <div> 55% <br/>  Desses animais são cães segundo a Cobasi cuida.</div>
+       <div> 45% <br/> Desses animais são gatos segundo a Cobasi cuida.</div>
+    </div>
+   </div>
+
+    <div>
+   
+    <h2 class="centralizar">Passo a passo da adoção</h2>
+
+    <div class="container-passo">
+    
+    <div class="passo-a-passo">
+    <div>
+    <img src="{% static '/img/img3.png' %} "class="img-pequena" alt="Logo"/>
+    <a>Pesquise na nossa aba de adoção e escolha entre os animais disponiveis</a>
+    </div>
+
+    <div>
+    <img src="{% static '/img/img2.png' %} "class="img-pequena" alt="Logo"/>
+    <a>Preencha o formulario de adoção e aguarde o contato de um de nossos voluntários</a>
+    </div>
+     
+    <div>
+    <img src="{% static '/img/logo.png' %} "class="img-pequena" alt="Logo"/>
+    <a >Adoção aprovada! Combine com o voluntário o dia de retirada!</a>
+    </div>
+    </div>
+    </div>
+    
+    <div>
+    <h2 class="centralizar">Animais disponiveis para adoção</h2>
+    <a class="centralizar">Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
     Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
     </div>
 
-    <div>
-        40  Milhões de animais abandonados no Brasil segundo a OMS
-        55%  Desses animais são cães segundo a Cobasi cuida.
-        45% Desses animais são gatos segundo a Cobasi cuida.
-    </div>
-
-    <div>
-    <h2>Passo a passo da adoção</h2>
-    Pesquise na nossa aba de adoção e escolha entre os animais disponiveis 
-    Preencha o formulario de adoção e aguarde o contato de um de nossos voluntários
-    Adoção aprovada! Combine com o voluntário o dia de retirads!
-    </div>
-
-    <div>
-    <h2>Animais disponiveis para adoção</h2>
-    <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
-    Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
-    </div>
-
-    <div>
-    <h2>Vamos juntos nessa Jornada!</h2>
-    <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
+    <div >
+    <h2 class="centralizar">Vamos juntos nessa Jornada!</h2>
+    <a class="centralizar">Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
      Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
     </div>
 
