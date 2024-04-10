@@ -2,6 +2,12 @@ body{
   background-color: rgba(251, 251, 251, 1);
 }
 
+header{
+    background-image:url("static/img/topo.png"); /* URL da imagem de fundo */
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
 .img-redimensionada{
     width: 150px;
     height: auto; /* Mantém a proporção da imagem */
@@ -102,4 +108,38 @@ body{
     width: 200px;
     border: 1px solid black;
     text-align: center;
+}
+
+
+.conteiner-nosso-trabalho{
+    display: flex; /* Exibe os elementos como um flex container */
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.conteiner-nosso-trabalho > div{
+    width: 900px;
+    border: 1px solid black;
+    
+}
+
+.texto-sobre4{
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.img-redimensionada2{
+    width: 300px;
+    height: auto; /* Mantém a proporção da imagem */
+    border: 1px solid black;
+
+}
+
+.text5{
+   display: flex;
+   justify-content: center;
+   width: 700px;
+   border: 1px solid black;
+   text-align: center;
 }
