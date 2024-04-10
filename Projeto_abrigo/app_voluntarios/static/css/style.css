@@ -1,5 +1,3 @@
-
-
 @font-face{
     font-family: 'Catcut';
     src: url(fontes/Catcut.otf) format(opentype);
@@ -48,18 +46,6 @@
     
 } 
 
-.header{
-    background-image: linear-gradient(0deg, var(--branco), 50%, var(--lilas));
-}
-
-header{
-    min-width: 85%;
-    padding: 20px 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
 
 .logo{
     font-family: var(--fonte_destaque);
@@ -70,30 +56,6 @@ header{
     text-shadow: 1px 1px 1px white;
 }
 
-.navbar{
-    padding: 0px 10px;
-    text-decoration: none;
-    font-family: var(--fonte_texto);
-    font-size: 15px;
-    color: var(--preto);
-}
-
-.navbar:hover{
-    color: var(--branco);
-    transition: 0.3s;
-}
-
-
-.img_header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imagem_header{
-    max-width: 70%;
-    max-height: 70%;
-    vertical-align: middle;
-}
 
 h2{
     font-family: var(--fonte_texto);
@@ -132,7 +94,7 @@ h6{
     line-height: 1.5;
 }
 
-footer{
+.form-voluntario1{
     display: flex;
     background-image: linear-gradient(180deg, var(--branco), 30%, var(--lilas));
     align-items: center;
@@ -215,4 +177,13 @@ input{
     color: var(--preto);
 }
 
+.header{
+    
+    background-image: linear-gradient(-360deg,rgba(251, 251, 251, 1),rgba(155, 171, 216, 1));
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
 

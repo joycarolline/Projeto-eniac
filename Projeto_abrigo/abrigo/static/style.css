@@ -1,3 +1,7 @@
+body{
+    min-height: 100vh;
+}
+
 footer{
     background-color: rgba(186, 194, 216, 1);
     display: flex; /* Exibe os elementos como um flex container */
@@ -36,6 +40,7 @@ footer{
 
 .navbar {
     background-color: rgba(155, 171, 216, 1);
+    height: 65px;
 }
 
 .img-logo{
@@ -68,3 +73,4 @@ footer{
     color: #000000;
     text-decoration: none;
 }
+

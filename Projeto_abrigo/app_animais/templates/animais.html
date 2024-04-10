@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+
     <!-- Conteúdo específico da página animais -->
+      <header class="header" >
+        <img src="{% static '/img/Component 7.png' %} "class="img-header" alt="imagem header"/>
+        <h1>header</h1>
+      </header>
 
     <h1>Animais disponiveis para adoção</h1>
     <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. Pellentesque leo eros, auctor eget </a>

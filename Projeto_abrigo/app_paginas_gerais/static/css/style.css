@@ -2,11 +2,6 @@ body{
   background-color: rgba(251, 251, 251, 1);
 }
 
-header{
-    background-image:url("static/img/topo.png"); /* URL da imagem de fundo */
-    background-size: cover; /* Redimensiona a imagem para cobrir todo o cabeçalho */
-    background-position: center; /* Centraliza a imagem de fundo */
-}
 
 .img-redimensionada{
     width: 150px;
@@ -17,8 +12,7 @@ header{
 .img-pequena{
     width: 50px;
     height: auto;
-    padding: 2px;
-    
+    padding: 2px;  
 }
 
 .img-cachorro{
@@ -61,10 +55,6 @@ header{
 
 }
 
-.conteiner-sobre > div{
-    width: 500px;
-    
-}
 
 .img-logo2{
     vertical-align: middle;
@@ -72,7 +62,7 @@ header{
 
 .texto-sobre{
     text-align: right;
-    
+    width: 500px;
 }
 
 .conteiner-sobre2{
@@ -110,22 +100,22 @@ header{
     text-align: center;
 }
 
-
 .conteiner-nosso-trabalho{
     display: flex; /* Exibe os elementos como um flex container */
     justify-content: center;
-    border: 1px solid black;
 }
 
-.conteiner-nosso-trabalho > div{
-    width: 900px;
-    border: 1px solid black;
-    
-}
 
-.texto-sobre4{
+.texto-sobre6{
+    display: block;
+    border: 1px solid black;
     text-align: left;
-    vertical-align: middle;
+    width: 500px;
+}
+
+.texto-sobre5{
+    display: block;
+    justify-content: center;
     border: 1px solid black;
 }
 
@@ -133,13 +123,48 @@ header{
     width: 300px;
     height: auto; /* Mantém a proporção da imagem */
     border: 1px solid black;
-
 }
 
 .text5{
    display: flex;
    justify-content: center;
-   width: 700px;
-   border: 1px solid black;
-   text-align: center;
+   width: 900px; /* Largura do elemento */
+   margin-left: auto;
+   margin-right: auto;
+   color: rgba(62, 62, 62, 1);
+}
+
+.valores{
+    display: flex; /* Exibe os elementos como um flex container */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(253, 211, 221, 1);
+}
+
+.header{
+    
+    background-image: linear-gradient(-360deg,rgba(251, 251, 251, 1),rgba(155, 171, 216, 1));
+    display:flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.header-sobre{
+    width: 700px;
+    height: auto;
+}
+
+.header-voluntario{
+    width: 700px;
+    height: auto; 
+}
+
+.binario{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgba(155, 171, 216, 1);
 }
