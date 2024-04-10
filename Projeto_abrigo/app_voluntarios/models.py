@@ -18,6 +18,7 @@ class Voluntario(models.Model):
     ativo = models.BooleanField(default=True)
     status = models.CharField(max_length=1,choices=STATUS, default="p")
 
+
     def __str__(self):
         return self.nome
     

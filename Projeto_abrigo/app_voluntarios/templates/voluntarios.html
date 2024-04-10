@@ -4,3 +4,73 @@
     <h1>Página voluntários</h1>
     <!-- Conteúdo específico da voluntarios -->
 {% endblock %}
+
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/"></script>
+    <title>Voluntários</title>
+</head>
+<body>
+    {% load static %}
+    <div class="header">
+        <header>
+            <p class="logo">Eniac Petz</p>
+            <nav>
+                <a href="#" class="navbar">Página inicial</a>
+                <a href="#"class="navbar">Adote</a>
+                <a href="#"class="navbar">Voluntario</a>
+            </nav>
+        </header>
+        <div class="img_header">
+            <img src="{% static 'imagens/voluntario.png' %}" alt="Imagem_logo_voluntarios" class="imagem_header">
+        </div>
+    </div>
+
+    <h2>Seja um voluntário e nos ajude a salvar vidas!</h2>
+
+    <div class="conteiner">
+        <div class="inf_voluntariado">
+            <img src="{% static 'imagens/Component 1.png' %}" alt="">
+        </div>
+
+        <div class="inf_voluntariado">
+            <h4>O que é um voluntário?</h4>
+            <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ducimus, sequi suscipit esse totam tempore quisquam blanditiis sint omnis, ipsa magni perferendis, facilis aut mollitia voluptatem placeat fugit provident. Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus quaerat magni, nam temporibus obcaecati, nostrum quis deleniti eveniet minus est necessitatibus nulla sapiente impedit dicta. Ab temporibus corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae sit perferendis iusto blanditiis dolor eum natus ea eveniet minima, atque numquam veritatis ratione quae. Neque omnis facilis sunt atque.</h6>
+
+            <h4>O que um voluntário faz na Eniac Petz?</h4>
+            <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ducimus, sequi suscipit esse totam tempore quisquam blanditiis sint omnis, ipsa magni perferendis, facilis aut mollitia voluptatem placeat fugit provident. Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus quaerat magni, nam temporibus obcaecati, nostrum quis deleniti eveniet minus est necessitatibus nulla sapiente impedit dicta. Ab temporibus corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae sit perferendis iusto blanditiis dolor eum natus ea eveniet minima, atque numquam veritatis ratione quae. Neque omnis facilis sunt atque.</h6>
+
+            <h4>O que eu preciso para ser um voluntario na Eniac Petz?</h4>
+            <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ducimus, sequi suscipit esse totam tempore quisquam blanditiis sint omnis, ipsa magni perferendis, facilis aut mollitia voluptatem placeat fugit provident. Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus quaerat magni, nam temporibus obcaecati, nostrum quis deleniti eveniet minus est necessitatibus nulla sapiente impedit dicta. Ab temporibus corrupti natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae sit perferendis iusto blanditiis dolor eum natus ea eveniet minima, atque numquam veritatis ratione quae. Neque omnis facilis sunt atque.</h6>
+        </div>
+
+    
+    </div>
+    
+    <footer>
+        <div>
+             <img src="{% static 'imagens/Component 2.png' %}" alt="" class="form_voluntario">
+        </div>
+        <div class="caixa_fora">
+            <div class="caixa_form">
+                <h2 class="preencha">Preencha aqui seus dados!</h2>
+
+                <form action="" method="POST" id="form">
+                    {% csrf_token %}
+                    <input type="text" name="nome" id="id_nome" placeholder="nome completo" class="nome_form">
+                    <input type="email" name="email" id="id_email" placeholder="email" class="email_form">
+                    <input type="tel" name="telefone" id="id_telefone" placeholder="telefone" class="tel_form">
+                    <input type="text" name="profissão" id="id_profissão" placeholder="profissão" class="prof_form">
+                    <input type="text" name="info_geral" id="id__informações" placeholder="informações adicionais" class="inf_form">
+                    <button type="submit" id="botão_enviar">Quero ser voluntario</button>
+
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
