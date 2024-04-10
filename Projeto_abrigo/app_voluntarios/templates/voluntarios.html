@@ -1,29 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block content %}
-    <h1>Página voluntários</h1>
-    <!-- Conteúdo específico da voluntarios -->
-{% endblock %}
-
-
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <script src="../static/"></script>
-    <title>Voluntários</title>
-</head>
-<body>
-    {% load static %}
+  {% block content %}
+    <link rel="stylesheet" href="{% static '\style.css' %}">
+    
     <div class="header">
         <header>
-            <p class="logo">Eniac Petz</p>
-            <nav>
-                <a href="#" class="navbar">Página inicial</a>
-                <a href="#"class="navbar">Adote</a>
-                <a href="#"class="navbar">Voluntario</a>
-            </nav>
+           
         </header>
         <div class="img_header">
             <img src="{% static 'imagens/voluntario.png' %}" alt="Imagem_logo_voluntarios" class="imagem_header">
@@ -74,3 +57,5 @@
     </footer>
 </body>
 </html>
+
+{% endblock %}

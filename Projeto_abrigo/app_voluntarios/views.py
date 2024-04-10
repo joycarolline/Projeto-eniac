@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from app_voluntarios.forms import VoluntariosForms
 
 # Create your views here.
@@ -10,7 +10,7 @@ def voluntarios(request):
             return redirect('sucesso')  # Redireciona para a página de sucesso após salvar o formulário
     else:
         form = VoluntariosForms()
-    return render(request, 'voluntario.html', {'form': form}) 
+    return render(request, 'voluntarios.html', {'form': form}) 
 
 
 def sucesso(request):
