@@ -7,4 +7,14 @@ def animal_list(request):
 
 def animal_detail(request, pk):
     animal = get_object_or_404(Animal, pk=pk)
-    return render(request, 'animais_detail.html', {'animal': animal})
+    return render(request, 'animal_detail.html', {'animal': animal})
+
+def animal_filter(request):
+    if 'especie' in request.GET:
+        especie = request.GET('especie', '')
+        animais = Animal.objects.filter(especie_contains=especie)
+    else:
+        animais = Animal.objects.all()
+    contexto = {'animais': animais}
+    
+    return render(request, 'animais.html', contexto)

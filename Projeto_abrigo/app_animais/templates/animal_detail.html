@@ -1,0 +1,24 @@
+
+
+<!-- animal_detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Animal</title>
+</head>
+<body>
+    <h1>Detalhes do Animal</h1>
+    <p><strong>Nome:</strong> {{ animal.nome }}</p>
+    <p><strong>Idade:</strong> {{ animal.idade }}</p>
+    <p><strong>Chip:</strong> {{ animal.chip }}</p>
+    <p><strong>Sobre:</strong> {{ animal.info_animais }}</p>
+    <p><strong>Raça:</strong> {{ animal.raca }}</p>
+    <p><strong>Espécie:</strong> {{ animal.especie }}</p>
+    <p><strong>Porte:</strong> {{ animal.porte }}</p>
+    <p><strong>Sexo:</strong> {{ animal.sexo }}</p>
+    <p><strong>Disponível:</strong> {% if animal.disponivel %} Sim {% else %} Não {% endif %}</p>
+    <img src="{{ animal.image.url }}" alt="Imagem do Animal">
+</body>
+</html>

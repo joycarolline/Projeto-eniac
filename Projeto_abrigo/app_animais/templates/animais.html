@@ -20,9 +20,10 @@
                 <p>Sexo: {{ animal.sexo }}</p>
                 <p>
             </li>
-
-            <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p>   
+            <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p> 
         {% endfor %}
+          
+
     </ul> 
 
 {% endblock %}
