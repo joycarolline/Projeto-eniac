@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static '/animais/css/style.css' %}">
 
-{% block content %}   
+  <header class="header" >
+    <img src="{% static '/animais/img/header-adocao.png' %}" class="header-adocao" alt="header-adocao"/>
+  </header>
 
 <div>
 <h1>Detalhes do Animal</h1>
 
-<img src="{{ animal.image.url }}" alt="Imagem do Animal"/>
+<img src="{{ animal.image.url }}" class ="foto-animal" alt="Imagem do Animal"/>
 <p><strong>Nome:</strong> {{ animal.nome }}</p>
 <p><strong>Idade:</strong> {{ animal.idade }}</p>
 <p><strong>Chip:</strong> {{ animal.chip }}</p>

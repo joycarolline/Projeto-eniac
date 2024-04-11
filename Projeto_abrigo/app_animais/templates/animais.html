@@ -2,17 +2,19 @@
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+<link rel="stylesheet" href="{% static '/animais/css/style.css' %}">
 
-<header class="header" >
-    
+  <header class="header" >
+    <img src="{% static '/animais/img/header-adocao.png' %}" class="header-adocao" alt="header-adocao"/>
   </header>
   
-  </h1>Disponiveis para adoção</h1>
+   </h1>Disponiveis para adoção</h1>
    <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. Pellentesque leo eros, auctor eget </a>
-    <ul>
+    
+   <ul>
         {% for animal in animais %}
             <li>
+                <img src="{{ animal.image.url }}" class ="foto-animal" alt="Imagem do Animal"/>
                 <h2>{{ animal.nome }}</h2>
                 <!-- Outras informações do animal podem ser exibidas aqui -->
                 <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p> 
