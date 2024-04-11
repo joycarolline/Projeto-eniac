@@ -134,7 +134,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'abrigo/static',
     BASE_DIR / 'app_paginas_gerais/static',
     BASE_DIR / 'app_animais/static',
-    BASE_DIR / '/app_voluntarios/static',
+    BASE_DIR / 'app_voluntarios/static',
     BASE_DIR / 'app_adotantes/static',
 ]
 

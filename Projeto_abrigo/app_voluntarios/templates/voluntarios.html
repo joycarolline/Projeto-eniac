@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
 
-  {% block content %}
-    <link rel="stylesheet" href="{% static '\style.css' %}">
+    {% block content %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="../static/css/style.css">
     
     <div class="header">
         <header>
@@ -34,7 +37,7 @@
     
     </div>
     
-    <footer>
+    <section>
         <div>
              <img src="{% static 'imagens/Component 2.png' %}" alt="" class="form_voluntario">
         </div>
@@ -54,7 +57,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </section>
 </body>
 </html>
 
