@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_adotantes.views import adotantes
+from app_adotantes.views import formulario_animal
 from django.conf import settings
 from django.conf.urls.static import static
 from app_paginas_gerais.views import inicial, sobre
@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inicial, name='inicial'),
     path('sobre/', sobre, name='sobre'),
+    path('animal/<int:pk>/formulario', formulario_animal, name='formulario_animal'),
     path('animais/', animal_list, name='animais'),
     path('animais/<int:pk>/', animal_detail, name='animal_detail'),
     path('voluntarios/', voluntarios, name='voluntarios' ),

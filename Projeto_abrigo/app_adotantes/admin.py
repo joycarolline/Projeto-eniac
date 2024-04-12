@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Form_User, Adocao
+from .models import Form_User
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 from django import forms
 
@@ -13,14 +13,11 @@ class ContactForm(forms.ModelForm):
 
 @admin.register(Form_User)
 class AdotanteAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'email', 'telefone')
-    search_fields = ['nome', 'telefone','email' ]
+    list_display = ('animal', 'nome_adotante', 'telefone_adotante', 'status', 'data')
+    search_fields = ['animal','nome_adotante', 'telefone_adotante','email_adotante']
     form = ContactForm
-
-
-@admin.register(Adocao)
-class AdocaoAdmin(admin.ModelAdmin):
-    list_display = ('__str__', 'adotante', 'status')
-    search_fields = ['nome', 'telefone', ]
     list_filter = ('status',)
     date_hierarchy = 'data'
+
+
+    
