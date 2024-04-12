@@ -22,6 +22,8 @@ from django.conf.urls.static import static
 from app_paginas_gerais.views import inicial, sobre
 from app_animais.views import animal_list, animal_detail
 from app_voluntarios.views import voluntarios
+from django.urls import path
+from app_animais.views import search_animais
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,6 +33,7 @@ urlpatterns = [
     path('animais/', animal_list, name='animais'),
     path('animais/<int:pk>/', animal_detail, name='animal_detail'),
     path('voluntarios/', voluntarios, name='voluntarios' ),
+    path('search/', search_animais, name='search'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )+ [
     # Definindo o caminho para servir arquivos estáticos durante o desenvolvimento
     # Isso serve arquivos estáticos em STATIC_URL (ex: '/static/') para STATIC_ROOT (ex: 'static/')

@@ -32,6 +32,7 @@ body{
 .centralizar{
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .passo-a-passo{
@@ -40,6 +41,7 @@ body{
     background-color: white;
     border: 1px solid rgba(104, 121, 133, 0.635) ;
     border-radius: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -120,6 +122,7 @@ body{
 .texto-sobre5{
     display: block;
     justify-content: center;
+    
 }
 
 .img-redimensionada2{
@@ -134,6 +137,7 @@ body{
    margin-left: auto;
    margin-right: auto;
    color: rgba(62, 62, 62, 1);
+   margin-bottom: 20px;
 }
 
 .valores{
@@ -151,6 +155,8 @@ body{
     height: 300px;
     align-items: center;
     justify-content: center;
+    z-index: -1;
+    margin-bottom: 40px;
 }
 
 .header-sobre{

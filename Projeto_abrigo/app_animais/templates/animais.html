@@ -8,10 +8,19 @@
     <img src="{% static '/animais/img/header-adocao.png' %}" class="header-adocao" alt="header-adocao"/>
   </header>
   
+  <div class="titulo-superior">
    <h1>Animais disponiveis para adoção</h1>
    <a class="centralizar">Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. Pellentesque leo eros, auctor eget </a>
+  </div>
+
+    <form class="search" method="GET" action="{% url 'search' %}">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
     
-   <ul class= "flex-list" >
+    
+  <div class="bloco-animais">
+   <ul class= "flex-list" col-sm-3 col-6>
         {% for animal in animais %}
             <li class="animal-list">
                 <img src="{{ animal.image.url }}" class ="foto-animal" alt="Imagem do Animal"/>
@@ -21,4 +30,5 @@
             </li>
         {% endfor %}
     </ul>
+  </div>
     {% endblock %}
