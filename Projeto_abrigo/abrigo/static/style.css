@@ -1,3 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+
+/* Estilos para telas menores que 600px */
+@media screen and (max-width: 600px) {
+    /* Ajuste o tamanho do texto, margens, preenchimentos, etc. */
+    body {
+        font-size: 14px;
+    }
+    /* Mais estilos... */
+}
+
+/* Estilos para telas entre 600px e 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    /* Ajuste o layout, larguras de elementos, etc. */
+    .container {
+        width: 90%;
+    }
+    /* Mais estilos... */
+}
+
+/* Estilos para telas maiores que 900px */
+@media screen and (min-width: 900px) {
+    /* Ajuste para telas maiores... */
+}
 
 footer{
     background-color: rgba(186, 194, 216, 1);
@@ -74,4 +103,8 @@ footer{
 .adocao{
     width: 50px;
     height: auto;
+}
+
+.margem{
+    margin-bottom: 20px;
 }

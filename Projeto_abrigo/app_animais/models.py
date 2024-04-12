@@ -23,7 +23,7 @@ class Porte(models.Model):
 
     def __str__(self):
         return self.porte
-
+    
 class Sexo(models.Model):
     sexo = models.CharField(max_length=50)
 
@@ -41,11 +41,12 @@ class Animal(models.Model):
     porte = models.ForeignKey(Porte, on_delete = models.CASCADE)
     sexo = models.ForeignKey(Sexo, on_delete = models.CASCADE)
     disponivel = models.BooleanField(default=True)
-    
+    data = models.DateTimeField(auto_now_add=True)
+
     class Meta:
         verbose_name = 'Animal'
         verbose_name_plural = 'Animais'
-    
+        ordering = ['-data']
 
     def __str__(self):
         return self.nome
