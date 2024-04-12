@@ -12,7 +12,22 @@
     height: auto;
 }
 
-.foto-animal{
-    width: 300px;
-    height: auto;
+.imagem-container {
+    width: 200px; /* Defina o tamanho desejado */
+    height: 200px; /* Defina o tamanho desejado */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o tamanho definido */
+  }
+.foto-animal {
+    width: 200px;
+    object-fit: cover;
+  }
+
+.flex-list {
+    display: flex;
+    list-style-type: none;
+    margin: 50px;
+}
+
+.animal-list{
+    margin: 30px;
 }

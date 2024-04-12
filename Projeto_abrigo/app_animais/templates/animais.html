@@ -8,13 +8,15 @@
     <img src="{% static '/animais/img/header-adocao.png' %}" class="header-adocao" alt="header-adocao"/>
   </header>
   
-   </h1>Disponiveis para adoção</h1>
+   <h1>Disponiveis para adoção</h1>
    <a>Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna. Pellentesque leo eros, auctor eget </a>
     
-   <ul>
+   <ul class="flex-list">
         {% for animal in animais %}
-            <li>
+            <li class="animal-list">
+                <div class="imagem-container">
                 <img src="{{ animal.image.url }}" class ="foto-animal" alt="Imagem do Animal"/>
+                </div>
                 <h2>{{ animal.nome }}</h2>
                 <!-- Outras informações do animal podem ser exibidas aqui -->
                 <p><a href="{% url 'animal_detail' pk=animal.pk %}">Detalhes</a></p> 
