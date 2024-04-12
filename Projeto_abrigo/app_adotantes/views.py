@@ -13,11 +13,9 @@ def formulario_animal(request, pk):
             form.instance.animal = animal
             form.save()
             # Redirecionar para onde quiser após salvar o formulário
-            return redirect('sucesso')
+            return render(request, 'adotantes.html', {'form': form, 'sucesso': True})
     else:
         form = PedidoAdocaoForm()
         form.fields['animal'].initial = animal
     return render(request, 'adotantes.html', {'form': form})
-
-def sucesso(request):
-    return render(request, 'sucesso.html') 
+ 

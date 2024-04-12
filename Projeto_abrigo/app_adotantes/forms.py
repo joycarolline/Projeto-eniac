@@ -9,15 +9,15 @@ class PedidoAdocaoForm(forms.ModelForm):
     
     class Meta:
         model = Form_User
-        fields = ["animal","nome_adotante", "email_adotante", "telefone_adotante", "quant_animais", "info_geral_adotante"]
+        fields = ["animal","nome", "email", "telefone", "quantidade_de_animais", "informações"]
 
     def clean(self):
         cleaned_data = super().clean()
-        nome = cleaned_data.get('nome_adotante')
-        email = cleaned_data.get('email_adotante')
-        telefone = cleaned_data.get('telefone_adotante')
-        quant_animais = cleaned_data.get('quant_animais')
-        info_geral = cleaned_data.get('info_geral_adotante')
+        nome = cleaned_data.get('nome')
+        email = cleaned_data.get('email')
+        telefone = cleaned_data.get('telefone')
+        quant_animais = cleaned_data.get('quantidade_de_animais')
+        info_geral = cleaned_data.get('informações')
 
         if not nome:
             self.add_error('nome', 'Este campo é obrigatório.')

@@ -13,8 +13,8 @@ class ContactForm(forms.ModelForm):
 
 @admin.register(Form_User)
 class AdotanteAdmin(admin.ModelAdmin):
-    list_display = ('animal', 'nome_adotante', 'telefone_adotante', 'status', 'data')
-    search_fields = ['animal','nome_adotante', 'telefone_adotante','email_adotante']
+    list_display = ('animal', 'nome', 'telefone', 'status', 'data')
+    search_fields = ['animal','nome', 'telefone','email']
     form = ContactForm
     list_filter = ('status',)
     date_hierarchy = 'data'

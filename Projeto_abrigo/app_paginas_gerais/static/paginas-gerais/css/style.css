@@ -8,6 +8,11 @@ body{
 
 }
 
+.header-inicial{
+    width: 1100px;
+    height: auto; 
+}
+
 .img-pequena{
     width: 50px;
     height: auto;
@@ -107,9 +112,9 @@ body{
 
 .texto-sobre6{
     display: block;
-    border: 1px solid black;
     text-align: left;
     width: 500px;
+    padding-top: 90px;
 }
 
 .texto-sobre5{
@@ -146,12 +151,12 @@ body{
     height: 300px;
     align-items: center;
     justify-content: center;
-    z-index: -1;
 }
 
 .header-sobre{
     width: 700px;
     height: auto;
+    
 }
 
 .header-voluntario{
@@ -159,15 +164,7 @@ body{
     height: auto; 
 }
 
-.binario{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    color: rgba(155, 171, 216, 1);
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 .carrosel{
     display: flex; /* Exibe os elementos como um flex container */
@@ -182,4 +179,10 @@ body{
 .espaçamento{
  margin-top: 50px;
 }
+
+.alinhar-texto{
+    color: rgba(62, 62, 62, 1);
+}
+
+
 

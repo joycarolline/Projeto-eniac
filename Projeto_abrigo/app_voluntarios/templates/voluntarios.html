@@ -9,7 +9,7 @@
         <img src="{% static '/voluntarios/img/header-voluntario.png' %}" class="header-voluntario" alt="Header"/>
       </header>
     
-
+      <div class="margem-pagina">
     <h2>Seja um voluntário e nos ajude a salvar vidas!</h2>
 
     <div class="conteiner">
@@ -49,5 +49,12 @@
             </div>
         </div>
     </div>
+</div>
+
+    {% if sucesso %}
+    <script>
+        alert('Seu formulário foi enviado com sucesso.');
+    </script>
+    {% endif %}
      
 {% endblock %}

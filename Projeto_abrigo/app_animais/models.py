@@ -4,6 +4,10 @@ from django.db import models
 
 class Raca(models.Model):
     raca = models.CharField(max_length=50)
+    
+    class Meta:
+        verbose_name = 'Raça'
+        verbose_name_plural = 'Raças'
 
     def __str__(self):
         return self.raca
@@ -38,6 +42,11 @@ class Animal(models.Model):
     sexo = models.ForeignKey(Sexo, on_delete = models.CASCADE)
     disponivel = models.BooleanField(default=True)
     
+    class Meta:
+        verbose_name = 'Animal'
+        verbose_name_plural = 'Animais'
+    
+
     def __str__(self):
         return self.nome
    

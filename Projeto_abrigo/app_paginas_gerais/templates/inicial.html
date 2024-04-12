@@ -3,19 +3,14 @@
 
 
     {% block content %}
+   
    <link rel="stylesheet" type="text/css" href="{% static '/paginas-gerais/css/style.css' %}">
 
    <header class="header" >
-    <img src="{% static '/paginas-gerais/img/header-inicial.png' %}" class="header-sobre" alt="Header"/>
-  </header>
-
-  <div>
-  <a class="binario">01000001 00100000 01100101 01110001 01110101 01101001 01110000 01100101 00100000 
-    01000101 01101110 01101001 01100001 01100011 00100000 01100100 01100101 01110011 01100101
-    01101010 01100001 00100000 01100010 01101111 01100001 01110011 00100000 01110110 01101001
-    01101110 01100100 01100001 01110011 00100001</a>
-  </div>
-
+    <img src="{% static '/paginas-gerais/img/header-inicial.png' %}" class="header-inicial" alt="Header"/>
+   </header>
+    
+   <div class="margem-pagina">
     <h1 class="centralizar">Um jeito fácil de fazer um novo amigo!</h1>
     
     <div class = "conteiner-inicio">
@@ -68,37 +63,21 @@
     
     <div class="passo-a-passo">
     <div>
-    <img src="{% static 'paginas-gerais/img/img3.png' %} "class="img-pequena" alt="Logo"/>
+    <img src="{% static '/paginas-gerais/img/img3.png' %} "class="img-pequena" alt="Logo"/>
     <a>Pesquise na nossa aba de adoção e escolha entre os animais disponiveis</a>
     </div>
 
     <div>
-    <img src="{% static 'paginas-gerais/img/img2.png' %} "class="img-pequena" alt="Logo"/>
+    <img src="{% static '/paginas-gerais/img/img2.png' %} "class="img-pequena" alt="Logo"/>
     <a>Preencha o formulario de adoção e aguarde o contato de um de nossos voluntários</a>
     </div>
      
     <div>
-    <img src="{% static 'paginas-gerais/img/logo.png' %} "class="img-pequena" alt="Logo"/>
+    <img src="{% static '/paginas-gerais/img/logo.png' %} "class="img-pequena" alt="Logo"/>
     <a >Adoção aprovada! Combine com o voluntário o dia de retirada!</a>
     </div>
     </div>
     </div>
-    
-    <div>
-    <h2 class="centralizar">Animais disponiveis para adoção</h2>
-    <a class="text5">Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
-    Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
     </div>
-
-    <div class="carrosel"></div>
-     
-    <div classe="espaçamento">
-    <div>
-    <h2 class="centralizar">Vamos juntos nessa Jornada!</h2>
-    <a class="text5">Lorem ipsum dolor sit amet, consectetur c quam sit amet posuere non magna.
-     Pellentesque leo eros, auctor eget mollis ac, fringilla id justo.</a>
-    </div>
-
-    <div class="carrosel"></div>
   </div>
 {% endblock %}

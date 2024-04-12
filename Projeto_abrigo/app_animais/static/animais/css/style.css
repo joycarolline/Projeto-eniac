@@ -12,7 +12,47 @@
     height: auto;
 }
 
-.foto-animal{
+.imagem-container {
+    width: 200px; /* Defina o tamanho desejado */
+    height: 200px; /* Defina o tamanho desejado */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o tamanho definido */
+  }
+
+.foto-animal {
     width: 300px;
-    height: auto;
+    object-fit: cover;
+  }
+
+.flex-list {
+    display: flex;
+    list-style-type: none;
+    margin: 50px;
+}
+
+.animal-list{
+    margin: 30px;
+}
+
+.detalhes-animal{
+    display: flex;
+    justify-content:space-around;
+    border: 1px solid rgba(151, 151, 151, 1);
+    border-radius: 20px;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+
+.margem-pagina{
+    padding: 40px;
 }

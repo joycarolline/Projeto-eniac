@@ -23,5 +23,5 @@ class Voluntario(models.Model):
         return self.nome
     
     class Meta:
-        verbose_name = 'Inscrição voluntario'
-        verbose_name_plural = 'Inscrição voluntarios'
+        verbose_name = 'Inscrição de voluntario'
+        verbose_name_plural = 'Inscrição de voluntarios'

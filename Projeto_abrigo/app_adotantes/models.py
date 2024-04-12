@@ -12,15 +12,13 @@ STATUS = (
 
 class Form_User(models.Model):
     animal = models.ForeignKey(Animal, on_delete=models.SET_NULL, null=True, blank=True)
-    nome_adotante = models.CharField(max_length=50)
-    email_adotante = models.EmailField(max_length=50)
-    telefone_adotante =PhoneNumberField()
-    quant_animais = models.CharField(max_length=500)
-    info_geral_adotante = models.CharField(max_length=500)
+    nome = models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)
+    telefone =PhoneNumberField()
+    quantidade_de_animais = models.CharField(max_length=500)
+    informações = models.CharField(max_length=500)
     status = models.CharField(max_length=1, choices=STATUS, default='p')
     data = models.DateTimeField('criado em', auto_now_add=True)
-
-    
 
     class Meta:
         verbose_name = 'Pedido de adoção'
