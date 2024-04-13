@@ -13,3 +13,4 @@ Projeto final do squad Eniac do Bootcamp Back-End Python e Django.
 - Josiane Da Silva
 - Joyce Andrade
 
+Link para site online: https://squadwomakers.pythonanywhere.com/
